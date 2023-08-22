@@ -3,13 +3,12 @@
 def set_rank(user_rank, tusr):
 	if tusr == 1:
 		user_rank = 0
-		return user_rank
-	if user_rank in range(1, 4):
-		return user_rank
+	elif user_rank in range(1, 4):
+		pass
 	else:
 		raise ValueError("no se reconoce el rango de usuario. Los tipos posibles son 1: administrativo,\n"
-										 " 2: manager, 3: corporativo, o vacio para clientes")
-
+											 " 2: manager, 3: corporativo, o vacio para clientes")
+	return user_rank
 
 def set_user_type(user_type):
 	if user_type not in range(1, 4):
@@ -24,3 +23,4 @@ def newart(dictMatriz, artcl, cant):
 		dictMatriz[artcl] += cant
 	else:
 		dictMatriz[artcl] = cant
+	return dictMatriz
