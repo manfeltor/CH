@@ -1,4 +1,8 @@
-from main1 import PageUser as pUser, Cliente as Clien
+#! python3
+
+"""archivo de prueba para la logica y funcionamiento de las clases y metodos de main"""
+
+from main1 import Cliente as Clien
 
 pepe = Clien("Felipe", "Torres", "32", "argentina","eluna", "tigre")
 print(pepe.compras())
